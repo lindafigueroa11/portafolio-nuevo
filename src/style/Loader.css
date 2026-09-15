@@ -1,0 +1,80 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.loader-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--color-page);
+}
+
+.loader-container {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  contain: layout;
+}
+
+.loader {
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  display: inline-block;
+  position: absolute;
+  background: currentColor;
+  color: var(--color-accent);
+  box-sizing: border-box;
+  animation: animloader 0.3s 0.3s linear infinite alternate;
+}
+
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  background: currentColor;
+  position: absolute;
+  bottom: 0;
+  animation: animloader1 0.3s 0.45s linear infinite alternate;
+}
+
+.loader::before {
+  left: -20px;
+  animation-delay: 0s;
+}
+
+@keyframes animloader {
+  0% {
+    height: 40px;
+    transform: translateY(0);
+  }
+  100% {
+    height: 10px;
+    transform: translateY(30px);
+  }
+}
+
+@keyframes animloader1 {
+  0% {
+    height: 48px;
+  }
+  100% {
+    height: 4.8px;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}

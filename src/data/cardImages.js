@@ -1,0 +1,21 @@
+/** Imagenes solo para el mosaico superior. */
+export const TILE_IMAGES = [
+  '/assets/ai-recipes-generator.png',
+  '/assets/text-notes.png',
+  '/assets/ecommerce-autos.png',
+  '/assets/pdf-converter-app.png',
+  '/assets/ecommerce-electronics.png',
+  '/assets/economic-analysis.png',
+  '/assets/urban-green-website.png',
+  '/assets/urban-green-desktop.png',
+  '/assets/business-admin.png',
+  '/assets/urban-green-app.png',
+  '/assets/law-firm-website.png',
+  '/assets/hotel-website.png',
+  '/assets/gym-website.png',
+  '/assets/restaurant-cafe-website.png',
+  '/assets/spa-estetica-website.png',
+  '/assets/mechanic-workshop-website.png',
+  '/assets/dental-clinic-website.png',
+  '/assets/furniture-store-website.png',
+];

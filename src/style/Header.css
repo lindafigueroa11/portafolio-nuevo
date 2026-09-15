@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "SFMonoRegular";
+  src: url("/fonts/SF/SFMonoRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: #0a192f;
+  height: var(--nav-height);
+  width: 100%;
+  font-family: "SFMonoRegular";
+  font-size: var(--fz-xs);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: absolute;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+}
+
+.row-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.row-list > li {
+  color: #ccd6f6;
+}
+
+.li-span {
+  color: #64ffda;
+}
+
+.link-page {
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: #ccd6f6;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin: 0 5px;
+}
+.link-page:hover {
+  color: #64ffda;
+}
+
+.logo {
+  width: 62px;
+  height: 72px;
+}

@@ -1,0 +1,202 @@
+.experience-page {
+  min-height: 100vh;
+  color: var(--color-text);
+  background-color: var(--color-page);
+  background-image:
+    linear-gradient(to right, transparent calc(20% - 0.5px), var(--grid-line) calc(20% - 0.5px), var(--grid-line) calc(20% + 0.5px), transparent calc(20% + 0.5px)),
+    linear-gradient(to right, transparent calc(29% - 0.5px), var(--grid-line-soft) calc(29% - 0.5px), var(--grid-line-soft) calc(29% + 0.5px), transparent calc(29% + 0.5px)),
+    linear-gradient(to right, transparent calc(38% - 0.5px), var(--grid-line) calc(38% - 0.5px), var(--grid-line) calc(38% + 0.5px), transparent calc(38% + 0.5px)),
+    linear-gradient(to right, transparent calc(50% - 0.5px), var(--grid-line-soft) calc(50% - 0.5px), var(--grid-line-soft) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(to right, transparent calc(59% - 0.5px), var(--grid-line) calc(59% - 0.5px), var(--grid-line) calc(59% + 0.5px), transparent calc(59% + 0.5px)),
+    linear-gradient(to right, transparent calc(68% - 0.5px), var(--grid-line-soft) calc(68% - 0.5px), var(--grid-line-soft) calc(68% + 0.5px), transparent calc(68% + 0.5px)),
+    linear-gradient(to right, transparent calc(77% - 0.5px), var(--grid-line) calc(77% - 0.5px), var(--grid-line) calc(77% + 0.5px), transparent calc(77% + 0.5px)),
+    linear-gradient(to right, transparent calc(86% - 0.5px), var(--grid-line-soft) calc(86% - 0.5px), var(--grid-line-soft) calc(86% + 0.5px), transparent calc(86% + 0.5px));
+  background-position: 20px 0;
+  padding-bottom: 56px;
+}
+
+.experience-hero,
+.experience-grid,
+.experience-copy,
+.experience-footer {
+  width: min(980px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.experience-hero {
+  padding-top: 72px;
+}
+
+.experience-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+.experience-author,
+.experience-nav a,
+.experience-footer a {
+  color: var(--color-heading);
+  text-decoration: none;
+  font-family: "SFMonoRegular", monospace;
+}
+
+.experience-author:hover,
+.experience-nav a:hover,
+.experience-footer a:hover {
+  color: var(--color-accent);
+}
+
+.experience-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.experience-hero h1 {
+  margin: 0;
+  color: var(--color-heading);
+  font-family: "SFMonoBold", monospace;
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  line-height: 0.95;
+  max-width: 560px;
+}
+
+.experience-intro {
+  margin-top: 16px;
+  max-width: 560px;
+  color: var(--color-muted);
+  line-height: 1.62;
+  font-family: "SFMonoRegular", monospace;
+  font-size: 1.05rem;
+}
+
+.experience-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 150px;
+  gap: 2px;
+  content-visibility: auto;
+  contain-intrinsic-size: 454px;
+}
+
+.exp-card {
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff, #e8eef6);
+  border: 1px solid var(--color-line-soft);
+}
+
+.exp-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.exp-card-lg {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.exp-card-wide {
+  grid-column: span 2;
+}
+
+.exp-card-tall {
+  grid-row: span 2;
+}
+
+.experience-copy {
+  margin-top: 42px;
+  max-width: 980px;
+  content-visibility: auto;
+  contain-intrinsic-size: 720px;
+}
+
+.experience-copy h2 {
+  margin: 0 0 18px;
+  color: var(--color-accent);
+  font-family: "SFMonoRegular", monospace;
+  font-size: 1.2rem;
+}
+
+.experience-overview {
+  max-width: 720px;
+}
+
+.experience-copy p,
+.experience-detail-card li {
+  margin: 0 0 14px;
+  color: var(--color-muted);
+  line-height: 1.7;
+  font-family: "SFMonoRegular", monospace;
+}
+
+.experience-copy p:last-child,
+.experience-detail-card li:last-child {
+  margin-bottom: 0;
+}
+
+.experience-detail-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2px;
+}
+
+.experience-detail-card {
+  min-height: 190px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--color-line);
+  box-shadow: 0 12px 30px rgba(31, 41, 55, 0.07);
+}
+
+.experience-detail-card h3 {
+  margin: 0 0 16px;
+  color: var(--color-heading);
+  font-family: "SFMonoBold", monospace;
+  font-size: 1rem;
+}
+
+.experience-detail-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.experience-detail-card strong {
+  color: var(--color-heading);
+  font-family: "SFMonoBold", monospace;
+}
+
+.experience-footer {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+  content-visibility: auto;
+  contain-intrinsic-size: 48px;
+}
+
+.experience-footer-links {
+  display: flex;
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 130px;
+  }
+
+  .experience-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-card-lg,
+  .exp-card-wide,
+  .exp-card-tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
