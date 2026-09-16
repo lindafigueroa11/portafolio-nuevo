@@ -255,7 +255,7 @@ export default function Main({ experiences = [], onExperienceIntent }) {
         </div>
       ) : null}
 
-      <section ref={tilesRef} className="tiles workgrid projects-grid" aria-label="Proyectos del portafolio">
+      <section id="projects" ref={tilesRef} className="tiles workgrid projects-grid" aria-label="Proyectos del portafolio">
         {tiles.map((tile) => {
           const experience = experiences[tile.experienceIndex];
           const label = experience?.title ?? 'Experience';
@@ -326,7 +326,7 @@ export default function Main({ experiences = [], onExperienceIntent }) {
               I build responsive web experiences with clean interfaces, reusable
               components, and a strong focus on performance and usability.
             </p>
-            <a className="section-link cursor-merge-zone" href="#0">
+            <a className="section-link cursor-merge-zone" href="#projects">
               → view work
             </a>
           </div>
